@@ -1,0 +1,67 @@
+Brainstorming
+
+
+A user will have access to recipes, ingredients, and a grocery list.
+Ingredients needed for recipes will show up on the grocery list.
+Pictures will be provided for the ingredients.
+The user’s preferred supermarket.
+
+Table Ideas
+
+USER:
+
+username
+First_name
+Last_name
+Email
+Password
+
+RECIPES:
+
+Recipes_id
+User_id
+Ingredients_id
+Recipe_name
+
+INGREDIENTS:
+
+Ingredients_id
+Grocery_list_id
+User_id
+Ingredient_name
+
+
+GROCERY_LIST:
+
+Grocery_list_id
+user_id
+
+
+
+SUPERMARKET:
+
+Supermarket_id
+Grocery_list_id
+User_id
+Supermarket_name
+
+
+Relationships
+
+One to one
+Recipe_id to recipe
+Grocery_list_id to grocery list
+Picture_id to pictures
+Supermarket_id to supermarket
+
+One to many
+User_id:
+to everything except pictures(it’s included in ingredients)
+
+Many to many
+Ingredients_id:
+ Recipes have many ingredients and ingredients can be in many different recipes.
+
+
+
+
